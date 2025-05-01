@@ -29,4 +29,8 @@ def analyze_message():
     return jsonify({"response": response})  # Sending response back to chatbot UI
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    import os
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
+
+   
